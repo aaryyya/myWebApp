@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
+@NoArgsConstructor//for a constructor for lombok an empty constructor which isnt created froom @allargsconstructor
 @Component
 public class Product {
     private int prodId;
