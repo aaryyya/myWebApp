@@ -1,12 +1,17 @@
 package com.example.myWebApp.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import org.springframework.stereotype.Component;
 
 @Data
+@AllArgsConstructor
+@Component
 public class Product {
     private int prodId;
-    private int price;
     private String prodName;
+    private int price;
+
 
 
 }
