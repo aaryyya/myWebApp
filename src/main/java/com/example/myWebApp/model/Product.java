@@ -1,5 +1,7 @@
 package com.example.myWebApp.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,7 +11,9 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 @NoArgsConstructor//for a constructor for lombok an empty constructor which isnt created froom @allargsconstructor
 @Component
+@Entity
 public class Product {
+    @Id
     private int prodId;
     private String prodName;
     private int price;
